@@ -1,31 +1,61 @@
-<c-col xs="12">
-    <c-card class="mb-4">
-      <c-card-header>
-        <strong>Angular Form Control</strong> <small>File input</small>
-      </c-card-header>
-      <c-card-body>
-        <app-docs-example href="forms/form-control#file-input">
-          <div class="mb-3">
-            <label cLabel for="formFile">Default file input example</label>
-            <input cFormControl id="formFile" type="file" />
+ 
+  <div class="card">
+    <h5 class="card-header">
+     Featured 
+    </h5>
+    <div class="card-body">
+      <form>
+
+        <input data-provide="datepicker">
+
+
+
+
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
           </div>
-          <div class="mb-3">
-            <label cLabel for="formFileMultiple">Multiple files input example</label>
-            <input cFormControl id="formFileMultiple" multiple type="file" />
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
           </div>
-          <div class="mb-3">
-            <label cLabel for="formFileDisabled">Disabled file input example</label>
-            <input cFormControl disabled id="formFileDisabled" type="file" />
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
           </div>
-          <div class="mb-3">
-            <label cLabel for="formFileSm">Small file input example</label>
-            <input cFormControl id="formFileSm" sizing="sm" type="file" />
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
           </div>
-          <div>
-            <label cLabel for="formFileLg">Large file input example</label>
-            <input cFormControl id="formFileLg" sizing="lg" type="file" />
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
           </div>
-        </app-docs-example>
-      </c-card-body>
-    </c-card>
-  </c-col>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+  </div>
