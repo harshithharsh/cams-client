@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { WeeklyContributionService } from './weeklycontributions.service';
+
 
 
 @Component({
@@ -9,12 +11,24 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['weeklycontributions.component.css']
 })
 export class WeeklycontributionsComponent {
+
+  postData = {
+    sundayCollection: '',
+    kurishadi: '',
+    monthlyContribution: '',
+    nercha: '',
+    lelam: '',
+    birthday: ''
+  };
   
   constructor(
-    private sanitizer: DomSanitizer,private modalService: NgbModal
+    private sanitizer: DomSanitizer,private modalService: NgbModal,private service:WeeklyContributionService
   ) { }
 
+  
   public open(modal: any): void {
     this.modalService.open(modal);
   }
+
+  
 }
